@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Car Photography & Drone Videos</title>
+    <style>
+        /* Reset & base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        a {
+            color: #00aaff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid #333;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 1.2px;
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #bbbbbb;
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            margin: 0 15px;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        h2 {
+            font-size: 2rem;
+            border-left: 5px solid #00aaff;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+        /* Gallery grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+            gap: 15px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        /* Video container */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.7);
+        }
+        .video-container iframe, .video-container video {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        /* About section */
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 1.1rem;
+            color: #ccc;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            color: #555;
+            font-size: 0.9rem;
+            border-top: 1px solid #333;
+            margin-top: 40px;
+        }
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            nav a {
+                margin: 0 8px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dizzy Snaps Car Photography & Drone Videos</h1>
+        <p>Capturing the beauty of cars from every angle</p>
+        <nav>
+            <a href="#gallery">Gallery</a>
+            <a href="#videos">Videos</a>
+            <a href="#about">About Me</a>
+        </nav>
+    </header>
+    <main>
+        <section id="gallery">
+            <h2>Photo Gallery</h2>
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=80" alt="Sportscar front view" />
+                <img src="https://images.unsplash.com/photo-1519648023493-d82b5f8d7d62?auto=format&fit=crop&w=600&q=80" alt="Classic car side view" />
+                <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=600&q=80" alt="Red luxury car" />
+                <img src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=600&q=80" alt="Closeup wheel" />
+                <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80" alt="Convertible car" />
+                <img src="https://images.unsplash.com/photo-1468071174046-657d9d351a40?auto=format&fit=crop&w=600&q=80" alt="Blue sports car" />
+            </div>
+        </section>
+        <section id="videos">
+            <h2>Drone Videos</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/5qap5aO4i9A" title="Drone video example" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Hi, I’m Luis, a passionate car photographer and drone videographer. I love capturing cars from unique perspectives and sharing their beauty through stunning photos and videos. Stay tuned for new content and feel free to get in touch!</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Dizzy Snaps Car Photography & Drone Videos
+    </footer>
+</body>
+</html>
