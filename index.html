@@ -137,14 +137,15 @@
   .image-gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
+    justify-content: center; /* centers images horizontally */
+    gap: 20px;               /* space between images */
     padding: 20px;
   }
 
   .image-gallery img {
-    max-width: 100%;
-    width: 300px;
+    width: 300px;            /* sets all images to same width */
+    height: auto;
+    object-fit: cover;
     border-radius: 8px;
   }
 </style>
